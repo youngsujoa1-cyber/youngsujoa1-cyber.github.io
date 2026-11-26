@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>슬림 비디오 – 포그라운드 서비스 사용 데모 / SlimVideo foreground service demo</title>
+<style>
+body{font-family:system-ui,-apple-system,"Malgun Gothic",sans-serif;margin:0;padding:24px;background:#0f1115;color:#e8eaf0}
+h1{font-size:18px;line-height:1.4;margin:0 0 8px}
+p{font-size:14px;line-height:1.6;color:#b6bccb;max-width:720px}
+video{max-width:360px;width:100%;border-radius:12px;background:#000;margin-top:16px}
+</style>
+</head>
+<body>
+<h1>슬림 비디오 – FOREGROUND_SERVICE_MEDIA_PROCESSING 사용 데모</h1>
+<p>동영상을 고르고 압축을 시작한 뒤 앱을 백그라운드로 보내도, 알림에 진행률이 표시되며 동영상 트랜스코딩(압축)이 계속되는 모습을 보여 줍니다.</p>
+<p>Pick a video, start compression, and leave the app: the notification keeps showing progress while the on-device H.265 transcode continues in the background.</p>
+<video controls playsinline preload="metadata" src="fg-demo.mp4"></video>
+</body>
+</html>
