@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 · Privacy Policy — 구름 날씨 레이더 (Cloud Weather Radar)</title>
+<meta name="description" content="구름 날씨 레이더(Cloud Weather Radar, 개발자 Topster)의 개인정보처리방침 / Privacy Policy for Cloud Weather Radar by Topster.">
+<meta name="theme-color" content="#0F141B" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F3F6FA" media="(prefers-color-scheme: light)">
+<style>
+  :root{
+    --bg:#F3F6FA; --card:#FFFFFF; --card-2:#F7FAFD; --text:#111A24; --muted:#5A6A7B;
+    --line:#DCE5EF; --accent:#1D6FB8; --accent-soft:#E4F0FB; --profit:#0E8A4F;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0F141B; --card:#161D26; --card-2:#1B2430; --text:#F2F6FA; --muted:#9AA9BA;
+      --line:#2C3846; --accent:#6CB8F0; --accent-soft:#16324A; --profit:#46D98A;
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",Roboto,sans-serif;
+    line-height:1.75; font-size:16px;
+  }
+  .wrap{max-width:780px; margin:0 auto; padding:20px 18px 56px}
+  header.top{display:flex; align-items:center; gap:10px; flex-wrap:wrap; padding:10px 0 18px}
+  header.top a.back{color:var(--muted); text-decoration:none; font-size:14px}
+  header.top a.back:hover{color:var(--accent)}
+  .spacer{flex:1}
+  .lang{display:inline-flex; border:1px solid var(--line); border-radius:999px; overflow:hidden; background:var(--card)}
+  .lang button{
+    appearance:none; border:0; background:transparent; color:var(--muted);
+    font:inherit; font-size:14px; padding:6px 14px; cursor:pointer;
+  }
+  .lang button[aria-pressed="true"]{background:var(--accent-soft); color:var(--accent); font-weight:600}
+  .brand{display:flex; align-items:center; gap:12px; margin:4px 0 10px}
+  .mark{
+    width:44px; height:44px; flex:0 0 44px; border-radius:12px;
+    background:linear-gradient(145deg,#1B2430,#0F141B);
+    display:flex; align-items:center; justify-content:center;
+    border:1px solid var(--line);
+  }
+  .mark svg{width:26px; height:26px}
+  h1{font-size:26px; line-height:1.3; margin:0; letter-spacing:-0.02em}
+  .sub{color:var(--muted); font-size:14px; margin:6px 0 22px}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:22px 20px; margin:0 0 16px}
+  h2{font-size:18px; margin:26px 0 8px; letter-spacing:-0.01em}
+  h2:first-child{margin-top:0}
+  h3{font-size:15px; margin:18px 0 4px}
+  p{margin:8px 0}
+  ul{margin:8px 0; padding-left:20px}
+  li{margin:5px 0}
+  a{color:var(--accent); word-break:break-word}
+  code{background:var(--card-2); border:1px solid var(--line); border-radius:5px; padding:1px 5px; font-size:13.5px; overflow-wrap:anywhere}
+  .meta{display:grid; grid-template-columns:1fr; gap:3px 14px; font-size:14px; color:var(--muted); margin-top:4px}
+  .meta b{color:var(--text); font-weight:600}
+  table{width:100%; border-collapse:collapse; font-size:14.5px; margin:10px 0}
+  th,td{text-align:left; vertical-align:top; padding:9px 10px; border-bottom:1px solid var(--line); overflow-wrap:break-word}
+  th{color:var(--muted); font-weight:600; white-space:nowrap}
+  tr:last-child td, tr:last-child th{border-bottom:0}
+  .note{background:var(--accent-soft); border-radius:10px; padding:12px 14px; font-size:14.5px; margin:14px 0}
+  .note p{margin:0}
+  .ok{color:var(--profit); font-weight:600}
+  footer{color:var(--muted); font-size:13px; text-align:center; padding-top:18px; line-height:1.9}
+  footer a{color:var(--muted)}
+  [hidden]{display:none !important}
+  @media (min-width:640px){
+    .wrap{padding:32px 24px 72px}
+    h1{font-size:31px}
+    .card{padding:28px 30px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <a class="back" href="index.html">← 구름 날씨 레이더</a>
+    <span class="spacer"></span>
+    <div class="lang" role="group" aria-label="Language / 언어">
+      <button type="button" id="btn-ko" aria-pressed="true" onclick="setLang('ko')">한국어</button>
+      <button type="button" id="btn-en" aria-pressed="false" onclick="setLang('en')">English</button>
+    </div>
+  </header>
+
+  <!-- ================= KOREAN ================= -->
+  <section id="ko">
+    <div class="brand">
+      <div class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#6CB8F0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M7 16.5a4 4 0 0 1-.3-8 5.4 5.4 0 0 1 10.4 1.1A3.7 3.7 0 0 1 17 16.5z"/>
+          <path d="M9 19.4l-1 1.6M13 19.4l-1 1.6M17 19.4l-1 1.6"/>
+        </svg>
+      </div>
+      <h1>개인정보처리방침</h1>
+    </div>
+    <p class="sub">구름 날씨 레이더 (Cloud Weather Radar) · 개발자 Topster · 시행일 2026년 11월 25일</p>
+
+    <div class="card">
+      <div class="meta">
+        <span><b>앱 이름</b> 구름 날씨 레이더 (Cloud Weather Radar)</span>
+        <span><b>패키지</b> <code>com.youngsu.rainradar</code> (Android)</span>
+        <span><b>개발자</b> Topster</span>
+        <span><b>문의</b> <a href="mailto:youngsujoa1@gmail.com">youngsujoa1@gmail.com</a></span>
+        <span><b>시행일</b> 2026년 11월 25일</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>1. 총칙</h2>
+      <p>구름 날씨 레이더(이하 “앱”)는 기상청 레이더 합성영상을 지도 위에서 재생하고, 예보·미세먼지를 함께 보여 주는 <b>날씨 앱</b>입니다. 개발자 Topster(이하 “개발자”)는 이용자의 개인정보를 소중히 여기며, 관련 법령과 Google Play 정책을 준수합니다. 본 방침은 앱이 어떤 정보를 다루고, 그 정보가 어디에 저장되며, 기기 밖으로 무엇이 오가는지 설명합니다.</p>
+      <div class="note">
+        <p><b>핵심 요약:</b> 앱은 <b>회원가입·로그인이 없고, 개발자가 운영하는 서버도 없습니다.</b> 앱이 저장하는 것은 이용자가 고른 지역과 앱 설정뿐이며, 이는 <b>기기의 앱 전용 영역</b>에만 있습니다. 날씨·미세먼지·레이더 자료를 받기 위해 <b>지역 좌표와 공공데이터 서비스 키</b>가 해당 공공 API로 전송되고, 지도·위성 타일을 받기 위해 타일 좌표가 지도 타일 서버로 전송됩니다. <span class="ok">그 밖의 개인정보를 수집하거나 판매하지 않습니다.</span></p>
+      </div>
+      <p>앱은 한국어·영어·일본어·스페인어·중국어 5개 언어로 제공되며 Google Play 스토어에서 배포됩니다. 본 방침은 <b>한국어와 영어</b>로 제공되고, 어느 나라에서 앱을 내려받았든 같은 내용이 적용됩니다.</p>
+
+      <h2>2. 앱이 저장하는 정보 (기기 내부)</h2>
+      <p>아래 정보는 이용자의 기기 안, 앱 전용 영역에만 저장되며 개발자 서버로 보내지 않습니다.</p>
+      <table>
+        <tr>
+          <th>선택한 지역</th>
+          <td>이용자가 목록에서 고른 동네 이름과 그 위도·경도, 또는 “내 위치”로 찾은 위치의 위도·경도. 다음에 앱을 열 때 같은 지역의 날씨를 보여 주기 위해 저장합니다.</td>
+        </tr>
+        <tr>
+          <th>알림 설정</th>
+          <td>비 접근 알림 켜짐/꺼짐, 확인 주기, 알림 반경, 마지막으로 알림을 보낸 시각</td>
+        </tr>
+        <tr>
+          <th>공공데이터 서비스 키</th>
+          <td>이용자가 직접 발급받아 입력한 기상청 API허브 서비스 키(있는 경우). 기기 설정에 저장되고, 날씨·미세먼지 요청에 함께 쓰입니다.</td>
+        </tr>
+        <tr>
+          <th>앱 설정</th>
+          <td>앱 언어, 온도·풍속 단위, 밝은 지도 여부, 첫 실행 안내 완료 여부</td>
+        </tr>
+        <tr>
+          <th>캐시</th>
+          <td>받아 온 날씨 응답, 지도·레이더·위성 타일 이미지, 공유용으로 만든 레이더 사진·영상. 저장 공간 확보를 위해 Android가 정리할 수 있고, 앱을 삭제하면 함께 삭제됩니다.</td>
+        </tr>
+      </table>
+      <p><b>위치 이력은 저장하지 않습니다.</b> “내 위치”를 쓰면 그때 한 번 위치를 읽어 지역을 정하고, 그 지역의 좌표만 위 ‘선택한 지역’으로 저장합니다. 이동 경로나 과거 위치 목록은 남기지 않습니다.</p>
+
+      <h2>3. 기기 밖으로 오가는 정보</h2>
+      <p>앱은 자체 서버 없이 아래 공개 서비스에 <b>직접</b> 요청합니다. 각 요청에는 서비스를 제공하는 쪽이 알 수 있는 범위의 정보(요청 내용, IP 주소, 앱이 보내는 사용자 에이전트)가 포함되며, 그 처리는 각 서비스의 정책을 따릅니다.</p>
+      <table>
+        <tr>
+          <th>기상청 API허브<br><code>apis.data.go.kr</code></th>
+          <td>레이더 영상 정보, 초단기 실황·예보, 단기예보. 보내는 값: 서비스 키, 지역의 격자 좌표(nx·ny), 요청 시각</td>
+        </tr>
+        <tr>
+          <th>에어코리아<br><code>apis.data.go.kr</code></th>
+          <td>시도별 실시간 미세먼지. 보내는 값: 서비스 키, 시도 이름</td>
+        </tr>
+        <tr>
+          <th>기상청 레이더 영상<br><code>www.kma.go.kr</code></th>
+          <td>레이더 합성영상 PNG. 보내는 값: 영상 시각</td>
+        </tr>
+        <tr>
+          <th>MET Norway<br><code>api.met.no</code></th>
+          <td>해외 도시 예보. 보내는 값: 위도·경도(소수점 4자리)</td>
+        </tr>
+        <tr>
+          <th>지도 타일<br>CARTO · OpenStreetMap</th>
+          <td>지도 배경 타일. 보내는 값: 타일 좌표, 확대 단계, 앱에 내장된 지도 키</td>
+        </tr>
+        <tr>
+          <th>미국 레이더<br>NOAA NEXRAD (Iowa State IEM)</th>
+          <td>미국 지역 레이더 타일. 보내는 값: 타일 좌표와 시각</td>
+        </tr>
+        <tr>
+          <th>전 세계 위성 강수<br>NASA GIBS (IMERG)</th>
+          <td>위성 강수 타일. 보내는 값: 타일 좌표와 시각</td>
+        </tr>
+        <tr>
+          <th>지역 이름 검색</th>
+          <td>Android에 내장된 지오코더(운영체제 기능)를 사용해 도시 이름을 찾습니다. 검색어는 운영체제가 처리하며, 개발자는 그 결과를 받지 않습니다.</td>
+        </tr>
+        <tr>
+          <th>광고<br>Google AdMob</th>
+          <td>아래 5항 참고</td>
+        </tr>
+      </table>
+      <p>앱이 이름·전화번호·이메일·연락처·사진·문자·계정 정보를 서버로 보내는 일은 없습니다. 개발자는 위 요청들을 통해 이용자를 식별할 수 있는 정보를 받지 않습니다.</p>
+
+      <h2>4. 앱이 사용하는 권한</h2>
+      <table>
+        <tr>
+          <th>위치<br>(선택)</th>
+          <td><code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code><br>
+          “내 위치”를 눌렀을 때 <b>현재 위치를 한 번 읽어</b> 그 지역의 날씨·레이더를 보여 주는 데만 사용합니다. 위치 권한을 허용하지 않아도 목록에서 동네를 골라 모든 기능을 쓸 수 있습니다. 앱은 백그라운드에서 위치를 추적하지 않습니다.</td>
+        </tr>
+        <tr>
+          <th>알림<br>(선택)</th>
+          <td><code>POST_NOTIFICATIONS</code><br>
+          비가 곧 오거나 내리는 중일 때 알려 주는 알림을 보낼 때 사용합니다. 허용하지 않아도 앱 안의 레이더·예보는 그대로 볼 수 있습니다.</td>
+        </tr>
+        <tr>
+          <th>재부팅 후<br>알림 복원</th>
+          <td><code>RECEIVE_BOOT_COMPLETED</code><br>
+          휴대폰을 다시 켰을 때 비 접근 알림 확인 예약을 다시 등록하는 데만 사용합니다.</td>
+        </tr>
+        <tr>
+          <th>인터넷·<br>네트워크 상태</th>
+          <td><code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code><br>
+          날씨·미세먼지·레이더·지도 타일을 받고 광고를 불러올 때 사용합니다.</td>
+        </tr>
+      </table>
+      <p>이 밖에 카메라·마이크·연락처·문자·통화 기록·사진첩 등 다른 권한은 요청하지 않습니다.</p>
+
+      <h2>5. 광고 (Google AdMob)</h2>
+      <p>앱은 무료로 제공되며, 운영을 위해 <b>Google AdMob</b>(Google LLC 제공) 광고를 표시합니다.</p>
+      <ul>
+        <li>Google Mobile Ads SDK는 광고 게재·측정을 위해 <b>광고 ID(Android 광고 ID)</b>, 기기 정보, IP 주소, 대략적인 위치, 광고 상호작용 정보 등을 수집·이용할 수 있습니다.</li>
+        <li>이 정보는 Google의 개인정보처리방침에 따라 처리됩니다: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+        <li>Google이 파트너 사이트·앱의 데이터를 이용하는 방식: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">policies.google.com/technologies/partner-sites</a></li>
+        <li>이용자는 Android 설정 → 개인정보 보호 → 광고에서 <b>광고 ID를 삭제하거나 맞춤 광고를 끌 수</b> 있습니다. 개발자는 AdMob을 통해 개별 이용자를 식별할 수 있는 정보를 제공받지 않습니다.</li>
+      </ul>
+      <p>앱은 위 광고 SDK 외에 자체 분석 도구, 크래시 수집 도구, 자체 서버를 사용하지 않습니다.</p>
+
+      <h2>6. 공유 기능</h2>
+      <ul>
+        <li>레이더 사진·영상·예보 카드를 공유하면 이용자가 고른 앱(카카오톡·메일 등)으로 그 파일 <b>한 개</b>와 앱 링크 문구가 넘어갑니다. 그 뒤의 보관·전송은 그 앱의 개인정보처리방침을 따릅니다.</li>
+        <li>공유를 누르면 앱 링크가 클립보드에 복사됩니다. 클립보드는 기기 안에서만 쓰이며 다른 곳으로 전송되지 않습니다.</li>
+        <li>홍보용 배너는 앱이 만든 이미지에 그려지는 것으로, 이용자의 정보를 담지 않습니다.</li>
+      </ul>
+
+      <h2>7. 보관 및 파기</h2>
+      <ul>
+        <li>지역·설정·키·캐시는 <b>이용자의 기기</b>에 저장되며, 개발자는 이를 보관하지 않습니다.</li>
+        <li>설정에서 지역을 바꾸거나 캐시를 지울 수 있고, <b>앱을 삭제(제거)하면 기기에 저장된 설정·캐시도 함께 삭제</b>됩니다.</li>
+        <li>공유한 사진·영상 사본은 이용자가 보낸 앱(카톡·메일 등)에 남으므로 필요하면 그 앱에서 직접 삭제해 주세요.</li>
+        <li>개발자는 별도로 보관하는 개인정보가 없으므로 파기할 개인정보도 없습니다. 문의 과정에서 이메일로 받은 내용은 문의 처리 목적으로만 사용하고 처리 완료 후 지체 없이 삭제합니다.</li>
+      </ul>
+
+      <h2>8. 이용자의 권리와 선택</h2>
+      <ul>
+        <li>위치 권한은 Android 설정 → 애플리케이션 → 구름 날씨 레이더 → 권한에서 언제든 허용·철회할 수 있습니다. 철회하면 “내 위치” 대신 목록에서 지역을 고르면 됩니다.</li>
+        <li>비 접근 알림은 앱 설정에서 끌 수 있고, 알림 권한도 Android 설정에서 철회할 수 있습니다.</li>
+        <li>광고 ID 재설정·삭제와 맞춤 광고 차단은 Android 설정에서 가능합니다.</li>
+        <li>개발자는 서버에 개인정보를 보관하지 않으므로, 열람·정정·삭제 요청의 대상은 이용자 기기 안의 데이터입니다. 앱 안에서 직접 처리하실 수 있으며, 방법이 궁금하거나 다른 문의가 있으면 아래 이메일로 연락해 주세요.</li>
+      </ul>
+
+      <h2>9. 아동의 개인정보</h2>
+      <p>앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 고의로 수집하지 않습니다.</p>
+
+      <h2>10. 안전성 확보 조치</h2>
+      <p>지역·설정·캐시는 앱 전용 저장 영역에 보관되어 다른 앱이 임의로 접근하기 어렵습니다. 앱이 주고받는 통신은 모두 HTTPS로 암호화됩니다. 개발자는 이용자의 정보를 서버에 보관하지 않으므로, 서버 유출로 개인정보가 노출될 가능성은 없습니다.</p>
+
+      <h2>11. 자료 출처</h2>
+      <p>날씨·레이더·미세먼지 자료는 아래 공개 자료를 사용하며, 저작권과 이용 조건은 각 제공처를 따릅니다.</p>
+      <ul>
+        <li>기상청 (레이더 합성영상, 단기·초단기 예보, API허브) · 에어코리아 (대기질)</li>
+        <li>MET Norway (해외 도시 예보) · NOAA NEXRAD / Iowa State IEM (미국 레이더) · NASA GIBS IMERG (위성 강수)</li>
+        <li>© OpenStreetMap 기여자 · © CARTO (지도 타일, CARTO Dark Matter)</li>
+      </ul>
+
+      <h2>12. 방침의 변경</h2>
+      <p>본 방침이 변경되는 경우 이 페이지에 변경 내용과 시행일을 게시합니다. 앱이 다루는 정보나 권한이 달라지는 중요한 변경이 있는 경우 앱 업데이트 또는 본 페이지를 통해 안내합니다.</p>
+
+      <h2>13. 문의</h2>
+      <p>개인정보 처리에 관한 문의는 아래로 연락해 주십시오.</p>
+      <ul>
+        <li>개발자: Topster</li>
+        <li>이메일: <a href="mailto:youngsujoa1@gmail.com">youngsujoa1@gmail.com</a></li>
+      </ul>
+
+      <p class="sub" style="margin-top:22px">본 방침은 2026년 11월 25일부터 적용됩니다.</p>
+    </div>
+  </section>
+
+  <!-- ================= ENGLISH ================= -->
+  <section id="en" hidden>
+    <div class="brand">
+      <div class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#6CB8F0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M7 16.5a4 4 0 0 1-.3-8 5.4 5.4 0 0 1 10.4 1.1A3.7 3.7 0 0 1 17 16.5z"/>
+          <path d="M9 19.4l-1 1.6M13 19.4l-1 1.6M17 19.4l-1 1.6"/>
+        </svg>
+      </div>
+      <h1>Privacy Policy</h1>
+    </div>
+    <p class="sub">구름 날씨 레이더 (Cloud Weather Radar) · Developer Topster · Effective November 25, 2026</p>
+
+    <div class="card">
+      <div class="meta">
+        <span><b>App</b> 구름 날씨 레이더 (Cloud Weather Radar)</span>
+        <span><b>Package</b> <code>com.youngsu.rainradar</code> (Android)</span>
+        <span><b>Developer</b> Topster</span>
+        <span><b>Contact</b> <a href="mailto:youngsujoa1@gmail.com">youngsujoa1@gmail.com</a></span>
+        <span><b>Effective date</b> November 25, 2026</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>1. Overview</h2>
+      <p>구름 날씨 레이더 (“the App”) is a <b>weather app</b> that plays the Korea Meteorological Administration’s radar composite imagery on a map and shows forecasts and air quality together. The developer, Topster (“the Developer”), respects your privacy and follows applicable law and Google Play policies. This policy explains what information the App handles, where it is stored, and what leaves your device.</p>
+      <div class="note">
+        <p><b>In short:</b> The App has <b>no sign-up, no login, and no server run by the Developer.</b> What it stores is the region you chose and your app settings, kept <b>only in the App’s private area on your device</b>. To fetch weather, air quality and radar data, <b>the region’s coordinates and a public-data service key</b> are sent to those public APIs, and <b>tile coordinates</b> are sent to map and satellite tile servers. <span class="ok">No other personal information is collected or sold.</span></p>
+      </div>
+      <p>The App is available in five languages (Korean, English, Japanese, Spanish and Chinese) and is distributed through Google Play. This policy is provided in <b>Korean and English</b> and applies to users in every country where the App is downloaded.</p>
+
+      <h2>2. Information the App stores (on your device)</h2>
+      <p>The following is stored only in the App’s private area on your device and is not sent to any Developer server.</p>
+      <table>
+        <tr>
+          <th>Chosen region</th>
+          <td>The name and coordinates of the neighbourhood you picked, or the coordinates of the location found with “My location”, kept so the same region opens next time.</td>
+        </tr>
+        <tr>
+          <th>Alert settings</th>
+          <td>Whether rain alerts are on, check interval, alert radius, and the time the last alert was sent</td>
+        </tr>
+        <tr>
+          <th>Public-data service key</th>
+          <td>The KMA API Hub service key you obtained and entered yourself (if any). It is stored in App settings and used in weather and air-quality requests.</td>
+        </tr>
+        <tr>
+          <th>App settings</th>
+          <td>App language, temperature and wind units, light map on/off, whether the first-run guide was completed</td>
+        </tr>
+        <tr>
+          <th>Cache</th>
+          <td>Weather responses, map/radar/satellite tile images, and radar photos or videos made for sharing. Android may clear it to free space, and it is removed with the App.</td>
+        </tr>
+      </table>
+      <p><b>The App keeps no location history.</b> “My location” reads your position once to choose a region, and only that region’s coordinates are stored as the “chosen region”. No route or list of past locations is kept.</p>
+
+      <h2>3. What leaves and enters your device</h2>
+      <p>Without a server of its own, the App requests the public services below <b>directly</b>. Each request carries what the provider can see (request contents, IP address and the user agent the App sends), and that provider’s policy governs its handling.</p>
+      <table>
+        <tr>
+          <th>KMA API Hub<br><code>apis.data.go.kr</code></th>
+          <td>Radar image info, ultra-short-term observations and forecasts, short-term forecast. Sent: service key, the region’s grid coordinates (nx, ny), request time</td>
+        </tr>
+        <tr>
+          <th>AirKorea<br><code>apis.data.go.kr</code></th>
+          <td>Real-time air quality by province. Sent: service key, province name</td>
+        </tr>
+        <tr>
+          <th>KMA radar imagery<br><code>www.kma.go.kr</code></th>
+          <td>Radar composite PNG. Sent: image time</td>
+        </tr>
+        <tr>
+          <th>MET Norway<br><code>api.met.no</code></th>
+          <td>Forecast for overseas cities. Sent: latitude and longitude (4 decimal places)</td>
+        </tr>
+        <tr>
+          <th>Map tiles<br>CARTO · OpenStreetMap</th>
+          <td>Base map tiles. Sent: tile coordinates, zoom level and the map key built into the App</td>
+        </tr>
+        <tr>
+          <th>US radar<br>NOAA NEXRAD (Iowa State IEM)</th>
+          <td>US radar tiles. Sent: tile coordinates and time</td>
+        </tr>
+        <tr>
+          <th>Global satellite precipitation<br>NASA GIBS (IMERG)</th>
+          <td>Satellite precipitation tiles. Sent: tile coordinates and time</td>
+        </tr>
+        <tr>
+          <th>Region name search</th>
+          <td>Uses Android’s built-in geocoder (an operating-system feature). Your query is handled by the OS, and the Developer never receives the results.</td>
+        </tr>
+        <tr>
+          <th>Ads<br>Google AdMob</th>
+          <td>See section 5</td>
+        </tr>
+      </table>
+      <p>The App never sends your name, phone number, email, contacts, photos, messages or account information to a server. The Developer receives no information that identifies you through these requests.</p>
+
+      <h2>4. Permissions the App uses</h2>
+      <table>
+        <tr>
+          <th>Location<br>(optional)</th>
+          <td><code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code><br>
+          Used only when you tap “My location”, to <b>read your position once</b> and show that region’s weather and radar. Without the location permission you can pick a neighbourhood from the list and use every feature. The App does not track your location in the background.</td>
+        </tr>
+        <tr>
+          <th>Notifications<br>(optional)</th>
+          <td><code>POST_NOTIFICATIONS</code><br>
+          Used for alerts when rain is coming or falling. Without it, the radar and forecast in the App still work.</td>
+        </tr>
+        <tr>
+          <th>Restore alerts after reboot</th>
+          <td><code>RECEIVE_BOOT_COMPLETED</code><br>
+          Used only to re-register the rain-alert check after you restart your phone.</td>
+        </tr>
+        <tr>
+          <th>Internet ·<br>network state</th>
+          <td><code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code><br>
+          Used to fetch weather, air quality, radar and map tiles, and to load ads.</td>
+        </tr>
+      </table>
+      <p>The App requests no other permissions such as camera, microphone, contacts, SMS, call log or photo library.</p>
+
+      <h2>5. Advertising (Google AdMob)</h2>
+      <p>The App is free and displays ads from <b>Google AdMob</b> (Google LLC) to support its operation.</p>
+      <ul>
+        <li>The Google Mobile Ads SDK may collect and use your <b>advertising ID (Android Advertising ID)</b>, device information, IP address, approximate location and ad interaction data to serve and measure ads.</li>
+        <li>That data is handled under Google’s Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+        <li>How Google uses data from partner sites and apps: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">policies.google.com/technologies/partner-sites</a></li>
+        <li>You can <b>delete your advertising ID or opt out of personalized ads</b> in Android Settings → Privacy → Ads. The Developer does not receive information from AdMob that identifies individual users.</li>
+      </ul>
+      <p>Apart from this advertising SDK, the App uses no analytics service, no crash-reporting service and no server of its own.</p>
+
+      <h2>6. Sharing features</h2>
+      <ul>
+        <li>When you share a radar photo, video or forecast card, the App hands that <b>one file</b> plus an app-link caption to the app you choose (KakaoTalk, mail and so on). Storage and transmission after that follow that app’s privacy policy.</li>
+        <li>Sharing also copies the app link to the clipboard. The clipboard is used only on your device and is not sent anywhere.</li>
+        <li>The promo banner is drawn into images the App creates and contains no information about you.</li>
+      </ul>
+
+      <h2>7. Retention and deletion</h2>
+      <ul>
+        <li>Region, settings, key and cache are stored <b>on your device</b>. The Developer keeps none of them.</li>
+        <li>You can change the region or clear the cache in settings, and <b>uninstalling the App removes the settings and cache stored on the device</b>.</li>
+        <li>Copies of photos or videos you shared remain in the app you sent them to (KakaoTalk, mail and so on); delete them there if needed.</li>
+        <li>The Developer keeps no personal data separately, so there is nothing to delete. Support emails you send are used only to answer your inquiry and are deleted promptly afterwards.</li>
+      </ul>
+
+      <h2>8. Your choices and rights</h2>
+      <ul>
+        <li>You can grant or revoke the location permission at any time in Android Settings → Apps → 구름 날씨 레이더 → Permissions. Without it, pick a region from the list instead of “My location”.</li>
+        <li>You can turn rain alerts off in the App’s settings and revoke the notification permission in Android Settings.</li>
+        <li>You can reset or delete your advertising ID and turn off personalized ads in Android Settings.</li>
+        <li>Because the Developer holds no personal data on a server, any access, correction or deletion is done on the data in your own device, which the App lets you manage directly. If you need help or have another question, contact us at the email below.</li>
+      </ul>
+
+      <h2>9. Children’s privacy</h2>
+      <p>The App is not directed to children under 14 and does not knowingly collect their personal information.</p>
+
+      <h2>10. Security</h2>
+      <p>Region, settings and cache are kept in the App’s private storage area, which other apps cannot readily access. All traffic the App sends and receives is encrypted over HTTPS. Because the Developer keeps no user information on a server, a server breach cannot expose it.</p>
+
+      <h2>11. Data sources</h2>
+      <p>Weather, radar and air-quality data come from the public sources below; their copyright and terms belong to each provider.</p>
+      <ul>
+        <li>Korea Meteorological Administration (radar composite, short- and ultra-short-term forecasts, API Hub) · AirKorea (air quality)</li>
+        <li>MET Norway (overseas city forecasts) · NOAA NEXRAD / Iowa State IEM (US radar) · NASA GIBS IMERG (satellite precipitation)</li>
+        <li>© OpenStreetMap contributors, © CARTO (map tiles, CARTO Dark Matter)</li>
+      </ul>
+
+      <h2>12. Changes to this policy</h2>
+      <p>If this policy changes, the change and its effective date will be posted on this page. Significant changes to the information or permissions the App handles will also be noted in an App update or on this page.</p>
+
+      <h2>13. Contact</h2>
+      <p>For questions about privacy, please contact:</p>
+      <ul>
+        <li>Developer: Topster</li>
+        <li>Email: <a href="mailto:youngsujoa1@gmail.com">youngsujoa1@gmail.com</a></li>
+      </ul>
+
+      <p class="sub" style="margin-top:22px">This policy is effective from November 25, 2026.</p>
+    </div>
+  </section>
+
+  <footer>
+    <a href="index.html">구름 날씨 레이더</a> · Topster · <a href="mailto:youngsujoa1@gmail.com">youngsujoa1@gmail.com</a><br>
+    <a href="app-ads.txt">app-ads.txt</a>
+  </footer>
+</div>
+
+<script>
+  function setLang(lang){
+    var ko = document.getElementById('ko'), en = document.getElementById('en');
+    var bko = document.getElementById('btn-ko'), ben = document.getElementById('btn-en');
+    var isKo = lang === 'ko';
+    ko.hidden = !isKo; en.hidden = isKo;
+    bko.setAttribute('aria-pressed', isKo ? 'true' : 'false');
+    ben.setAttribute('aria-pressed', isKo ? 'false' : 'true');
+    document.documentElement.lang = isKo ? 'ko' : 'en';
+    try { history.replaceState(null, '', isKo ? '#ko' : '#en'); } catch (e) {}
+  }
+  (function(){
+    var h = (location.hash || '').toLowerCase();
+    var nav = (navigator.language || 'ko').toLowerCase();
+    if (h === '#en' || (h !== '#ko' && nav.indexOf('ko') !== 0)) setLang('en');
+  })();
+</script>
+</body>
+</html>
